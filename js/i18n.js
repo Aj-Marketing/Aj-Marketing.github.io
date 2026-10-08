@@ -62,7 +62,7 @@ window.I18N = {
     "services.s7": "Camera operation & photography",
     "services.s7d": "I shoot video and photos on my own Panasonic GH5 and record with my own Shure SM7B and field microphones.",
 
-    "work.title": "Selected work",
+    "work.title": "My work",
     "work.all": "All",
     "work.long": "Long-form",
     "work.short": "Short-form",
@@ -162,7 +162,7 @@ window.I18N = {
     "services.s7": "Operador de cámara y fotografía",
     "services.s7d": "Grabo vídeo y hago fotografía con mi propia Panasonic GH5, y registro el sonido con mi propio Shure SM7B y micrófonos de campo.",
 
-    "work.title": "Trabajos seleccionados",
+    "work.title": "Mis trabajos",
     "work.all": "Todo",
     "work.long": "Formato largo",
     "work.short": "Formato corto",
