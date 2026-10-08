@@ -43,7 +43,7 @@
     $$('[data-config="location"]').forEach(el => el.textContent = L(S.location));
     $("#mailLink").href = `mailto:${S.email}`;
     const cv = $("#cvLink");
-    cv.href = `cv.html?lang=${lang}`;
+    cv.href = $("#navCv").href = `cv.html?lang=${lang}`;
     if (S.photo) {
       $("#photo").innerHTML = `<img src="${esc(S.photo)}" alt="${esc(S.name)}" loading="lazy">`;
     }

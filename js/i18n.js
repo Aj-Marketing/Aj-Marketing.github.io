@@ -11,6 +11,7 @@ window.I18N = {
     "nav.services": "Services",
     "nav.work": "Work",
     "nav.experience": "Experience",
+    "nav.cv": "My CV",
     "nav.contact": "Let's talk",
     "nav.menu": "Menu",
 
@@ -111,6 +112,7 @@ window.I18N = {
     "nav.services": "Servicios",
     "nav.work": "Trabajos",
     "nav.experience": "Experiencia",
+    "nav.cv": "Mi CV",
     "nav.contact": "Hablemos",
     "nav.menu": "Menú",
 
