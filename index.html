@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Antonio Hernández Valls · Marketing & Video Editor</title>
+  <meta name="description" content="Marketing specialist and video editor. Strategy, editing, photography and content creation in English and Spanish.">
+  <meta property="og:title" content="Antonio Hernández Valls · Marketing & Video Editor">
+  <meta property="og:description" content="Marketing specialist and video editor. Strategy, editing, photography and content creation in English and Spanish.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b0b0d'/><circle cx='16' cy='16' r='6' fill='%23ff4d2e'/></svg>">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="brand" aria-label="Home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__name" data-config="name">Antonio Hernández Valls</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#contact" class="nav__cta" data-i18n="nav.contact">Let's talk</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span class="sr" data-i18n="nav.menu">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__frame">
+        <video class="hero__bg" id="heroBg" muted loop playsinline preload="none" aria-hidden="true"></video>
+        <div class="hud hud--tl"><span class="rec" aria-hidden="true"></span>REC</div>
+        <div class="hud hud--tr mono" id="timecode" aria-hidden="true">00:00:00:00</div>
+        <div class="hud hud--bl mono" data-i18n="hero.hud">SC.01 · TAKE 1</div>
+        <div class="hud hud--br mono">4K · 24 FPS</div>
+        <span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
+
+        <div class="hero__content">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Marketing specialist · Video editor · Content creator</p>
+          <h1 class="hero__title">
+            <span class="line" data-i18n="hero.title1">I plan the campaign.</span>
+            <span class="line line--serif" data-i18n="hero.title2">Then I make the content.</span>
+          </h1>
+          <p class="hero__lead" data-i18n="hero.lead">Strategy and production in one hire. I turn marketing goals into content people actually watch, in English and Spanish.</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" type="button" id="playReel">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              <span data-i18n="hero.reel">Watch showreel</span>
+            </button>
+            <a class="btn btn--ghost" id="cvLink" href="cv.html">
+              <span data-i18n="hero.cv">My CV</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0l-6-6m6 6l-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__meta">
+        <div><span class="mono label" data-i18n="hero.based">Based in</span><span data-config="location">Valencia, Spain</span></div>
+        <div><span class="mono label" data-i18n="hero.languages">Languages</span><span data-i18n="hero.languagesVal">English · Spanish</span></div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" aria-label="Highlights">
+      <div class="stat reveal"><span class="stat__n">1M+</span><span class="stat__l" data-i18n="stats.views">views across my social channels</span></div>
+      <div class="stat reveal"><span class="stat__n">6</span><span class="stat__l" data-i18n="stats.years">years creating content</span></div>
+      <div class="stat reveal"><span class="stat__n">BA</span><span class="stat__l" data-i18n="stats.degree">Film, TV &amp; Digital Media (UK)</span></div>
+      <div class="stat reveal"><span class="stat__n">2</span><span class="stat__l" data-i18n="stats.langs">native languages: EN · ES</span></div>
+    </section>
+
+    <!-- TOOLS MARQUEE -->
+    <div class="marquee" aria-label="Tools">
+      <div class="marquee__track" id="marquee"></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="section__head">
+        <span class="mono label">01 —</span>
+        <h2 data-i18n="about.title">About</h2>
+      </div>
+      <div class="about__grid">
+        <figure class="about__photo reveal" id="photo">
+          <div class="photo-ph"><span class="mono" data-i18n="about.photo">Your photo here</span></div>
+        </figure>
+        <div class="about__text reveal">
+          <p class="big" data-i18n-html="about.big">Hi, I'm Antonio.</p>
+          <p data-i18n="about.p1">I studied Creative Film, Television &amp; Digital Media Production at the University of Northampton (UK). Since 2020 I've edited and produced short films, indie features, business ads and social videos as a freelancer, and worked as a sound designer on set and in post.</p>
+          <p data-i18n="about.p2">For six years I've also run my own channels on TikTok, Instagram, YouTube and Twitch. Now I'm doing a Master's in Generative AI, focused on automation and workflows, so I can produce more and work faster without losing human creativity.</p>
+          <ul class="facts">
+            <li><span class="mono label" data-i18n="about.f1">Focus</span><span data-i18n="about.f1v">Social video, short-form, brand content, photography</span></li>
+            <li><span class="mono label" data-i18n="about.f4">Own kit</span><span data-i18n="about.f4v">Panasonic GH5, Shure SM7B &amp; field microphones</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="section__head">
+        <span class="mono label">02 —</span>
+        <h2 data-i18n="services.title">What I do</h2>
+      </div>
+      <div class="tracks">
+        <div class="track reveal">
+          <div class="track__head">
+            <span class="mono label" data-i18n="services.t1label">Track A · Strategy</span>
+            <h3 data-i18n="services.t1">Marketing</h3>
+          </div>
+          <ul class="svc">
+            <li><h4 data-i18n="services.s1">Social media content strategy</h4><p data-i18n="services.s1d">Platform-native plans for TikTok, Instagram, YouTube, Twitch and LinkedIn, plus email marketing campaigns, in English and Spanish.</p></li>
+            <li><h4 data-i18n="services.s2">Analytics, CRM & email</h4><p data-i18n="services.s2d">Tracking with Google Analytics (GA4), managing contacts in HubSpot, and running email marketing.</p></li>
+            <li><h4 data-i18n="services.s3">AI workflows & automation</h4><p data-i18n="services.s3d">Generative-AI tools and automations that speed up production and reporting.</p></li>
+          </ul>
+        </div>
+        <div class="track__join" aria-hidden="true"><span>+</span></div>
+        <div class="track reveal">
+          <div class="track__head">
+            <span class="mono label" data-i18n="services.t2label">Track B · Production</span>
+            <h3 data-i18n="services.t2">Video & content</h3>
+          </div>
+          <ul class="svc">
+            <li><h4 data-i18n="services.s4">Video editing & motion graphics</h4><p data-i18n="services.s4d">Short films, indie features, ads, marketing campaigns and long-form YouTube in DaVinci Resolve and Premiere, with animated titles and graphics in After Effects.</p></li>
+            <li><h4 data-i18n="services.s5">Short-form & live content</h4><p data-i18n="services.s5d">Reels, TikToks, Shorts and Twitch highlights built to stop the scroll in the first second.</p></li>
+            <li><h4 data-i18n="services.s6">Sound recording & design</h4><p data-i18n="services.s6d">On-set dialogue, voice-over, ambience and SFX, mixed with Audition and iZotope.</p></li>
+            <li><h4 data-i18n="services.s7">Camera operation & photography</h4><p data-i18n="services.s7d">I shoot video and photos on my own Panasonic GH5 and record with my own Shure SM7B and field microphones.</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section work" id="work">
+      <div class="section__head">
+        <span class="mono label">03 —</span>
+        <h2 data-i18n="work.title">Selected work</h2>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filter work">
+        <button role="tab" aria-selected="true" data-filter="all" data-i18n="work.all">All</button>
+        <button role="tab" aria-selected="false" data-filter="long" data-i18n="work.long">Long-form</button>
+        <button role="tab" aria-selected="false" data-filter="short" data-i18n="work.short">Short-form</button>
+        <button role="tab" aria-selected="false" data-filter="campaign" data-i18n="work.campaign">Campaigns</button>
+        <button role="tab" aria-selected="false" data-filter="motion" data-i18n="work.motion">Motion</button>
+        <button role="tab" aria-selected="false" data-filter="sound" data-i18n="work.sound">Sound</button>
+      </div>
+      <div class="grid" id="workGrid"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="section__head">
+        <span class="mono label">04 —</span>
+        <h2 data-i18n="exp.title">Experience</h2>
+      </div>
+      <div class="exp__grid">
+        <ol class="timeline" id="timeline"></ol>
+        <aside class="toolbox reveal">
+          <h3 class="mono label" data-i18n="exp.tools">Toolbox</h3>
+          <div class="chips" id="tools"></div>
+          <h3 class="mono label" data-i18n="exp.gear">Gear</h3>
+          <div class="chips chips--gear" id="gear"></div>
+          <h3 class="mono label" data-i18n="exp.education">Education</h3>
+          <ul class="edu" id="education"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <p class="mono label" data-i18n="contact.label">05 — Contact</p>
+      <h2 class="contact__title">
+        <span data-i18n="contact.title1">Got a brand that needs</span>
+        <span class="line--serif" data-i18n="contact.title2">to be seen?</span>
+      </h2>
+      <a class="contact__mail" id="mailLink" href="#"><span data-config="email">ajhernandezvalls@gmail.com</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="copy mono" type="button" id="copyMail" data-i18n="contact.copy">Copy email</button>
+      <ul class="socials" id="socials"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="mono">© <span id="year"></span> <span data-config="name">Antonio Hernández Valls</span></span>
+    <a class="mono" href="#top" data-i18n="footer.top">Back to top ↑</a>
+  </footer>
+
+  <!-- VIDEO MODAL -->
+  <dialog class="modal" id="modal">
+    <div class="modal__inner">
+      <button class="modal__close" type="button" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal__player" id="modalPlayer"></div>
+      <div class="modal__info" id="modalInfo"></div>
+    </div>
+  </dialog>
+
+  <script src="js/config.js?v=27"></script>
+  <script src="js/i18n.js?v=27"></script>
+  <script src="js/main.js?v=27"></script>
+</body>
+</html>

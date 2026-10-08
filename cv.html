@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV · Antonio Hernández Valls</title>
+  <meta name="description" content="CV of Antonio Hernández Valls, marketing specialist and video editor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=27">
+  <link rel="stylesheet" href="css/cv.css?v=27">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230b0b0d'/><circle cx='16' cy='16' r='6' fill='%23ff4d2e'/></svg>">
+</head>
+<body class="cv-body">
+  <header class="nav is-scrolled">
+    <div class="nav__inner">
+      <a href="index.html" class="brand" id="homeLink">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__name">Antonio Hernández Valls</span>
+      </a>
+      <a class="cv-back" id="backLink" href="index.html" data-i18n="cv.back">← Back to portfolio</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="cv-wrap">
+    <div class="cv-actions">
+      <h1 class="cv-page-title" data-i18n="cv.title">My CV</h1>
+      <div class="cv-actions__btns">
+        <a class="btn btn--primary" id="cvDownload" href="#" download>
+          <span data-i18n="cv.download">Download PDF</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="btn btn--ghost" type="button" id="cvPrint" data-i18n="cv.print">Print</button>
+      </div>
+    </div>
+    <p class="cv-note mono" id="cvNote" data-i18n="cv.pdfNote" hidden>The PDF is in Spanish. An English version is coming soon.</p>
+
+    <article class="sheet" id="sheet" aria-label="CV">
+      <header class="sheet__head">
+        <h2 class="sheet__name">Antonio Hernández Valls</h2>
+        <p class="sheet__role" id="cvRole"></p>
+        <p class="sheet__contact"><a id="cvEmail" href="#"></a><span aria-hidden="true">·</span><span id="cvLocation"></span><span id="cvLinks"></span></p>
+      </header>
+
+      <section class="sheet__sec">
+        <h3 data-i18n="cv.summary">Profile</h3>
+        <p id="cvSummary"></p>
+      </section>
+
+      <section class="sheet__sec">
+        <h3 data-i18n="cv.experience">Experience</h3>
+        <div id="cvExperience"></div>
+      </section>
+
+      <section class="sheet__sec">
+        <h3 data-i18n="cv.education">Education</h3>
+        <div id="cvEducation"></div>
+      </section>
+
+      <section class="sheet__sec">
+        <h3 data-i18n="cv.skills">Skills</h3>
+        <dl class="sheet__skills" id="cvSkills"></dl>
+      </section>
+
+      <section class="sheet__sec sheet__sec--split">
+        <div>
+          <h3 data-i18n="cv.languages">Languages</h3>
+          <p id="cvLanguages"></p>
+        </div>
+        <div>
+          <h3 data-i18n="cv.gear">Own gear</h3>
+          <p id="cvGear"></p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <script src="js/config.js?v=27"></script>
+  <script src="js/i18n.js?v=27"></script>
+  <script src="js/cv.js?v=27"></script>
+</body>
+</html>

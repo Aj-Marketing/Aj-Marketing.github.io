@@ -1,0 +1,6 @@
+# Local-only: build scripts, CV sources, preview server, editor/session settings
+tools/
+.claude/
+*.tmp
+Thumbs.db
+desktop.ini
