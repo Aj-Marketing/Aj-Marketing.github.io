@@ -359,16 +359,26 @@ p { margin: 0 0 1em; }
   .stat { border-top: 1px solid var(--line); }
   .stat:nth-child(-n+2) { border-top: 0; }
 }
+/* Smaller screens: no drop-down. The menu becomes an always-visible second row
+   that can be swiped sideways if it doesn't fit. */
 @media (max-width: 960px) {
-  .nav__toggle { display: block; }
-  .nav__links {
-    position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: flex-start; gap: 0;
-    background: rgba(11,11,13,.96); border-bottom: 1px solid var(--line); padding: 8px var(--gutter) 20px;
-    display: none;
+  html { scroll-padding-top: calc(var(--nav-h, 104px) + 12px); }
+  .nav {
+    background: rgba(11,11,13,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom-color: var(--line);
   }
-  .nav.is-open .nav__links { display: flex; }
-  .nav__links a { padding: 12px 0; font-size: 1.1rem; width: 100%; }
-  .nav__links .nav__cta { border: 0; padding: 12px 0; color: var(--accent); }
+  .nav__inner { flex-wrap: wrap; row-gap: 10px; column-gap: 16px; padding-top: 12px; padding-bottom: 10px; }
+  .nav__links {
+    order: 3; width: 100%; gap: 22px; overflow-x: auto; scrollbar-width: none;
+    -webkit-overflow-scrolling: touch; padding: 2px 0;
+    -webkit-mask-image: linear-gradient(90deg, #000 88%, transparent);
+            mask-image: linear-gradient(90deg, #000 88%, transparent);
+  }
+  .nav__links::-webkit-scrollbar { display: none; }
+  .nav__links a { font-size: .9rem; }
+  .nav__links a:last-child { margin-right: 28px; }
+  .nav__links .nav__cta { padding: .35em .95em; }
+  .hero { padding-top: calc(var(--nav-h, 104px) + 10px); }
 }
 @media (max-width: 860px) {
   .about__grid, .exp__grid { grid-template-columns: 1fr; }
@@ -380,7 +390,14 @@ p { margin: 0 0 1em; }
 }
 @media (max-width: 600px) {
   body { font-size: 16px; }
-  .hero { padding-top: 76px; }
+  .hero { padding-top: calc(var(--nav-h, 104px) + 8px); }
+  /* phones: wrap the menu instead of scrolling, so every option is always visible */
+  .nav__links {
+    flex-wrap: wrap; overflow: visible; gap: 8px 16px;
+    -webkit-mask-image: none; mask-image: none;
+  }
+  .nav__links a { font-size: .84rem; }
+  .nav__links a:last-child { margin-right: 0; }
   .hero__frame { min-height: 520px; padding: 72px 20px 28px; border-radius: 16px; }
   .hud--tl, .hud--tr { top: 18px; }
   .hud--tl { left: 18px; } .hud--tr { right: 18px; } .hud--br { display: none; }

@@ -185,6 +185,11 @@
     nav.classList.remove("is-open");
   }));
   addEventListener("scroll", () => nav.classList.toggle("is-scrolled", scrollY > 20), { passive: true });
+  // Expose the real menu height so the hero and anchor jumps clear it on any screen size.
+  const setNavH = () => document.documentElement.style.setProperty("--nav-h", nav.offsetHeight + "px");
+  addEventListener("resize", setNavH);
+  if (document.fonts) document.fonts.ready.then(setNavH);
+  setNavH();
   $$(".lang button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
 
   /* ---------- timecode (24 fps) ---------- */
