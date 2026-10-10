@@ -308,6 +308,7 @@ p { margin: 0 0 1em; }
   border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; color: var(--muted);
 }
 .footer a { text-decoration: none; }
+.footer__privacy { opacity: .7; }
 .footer a:hover { color: var(--text); }
 
 /* modal */

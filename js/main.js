@@ -122,7 +122,11 @@
     if (v.file) return `<video src="${esc(v.file)}" ${v.thumb ? `poster="${esc(v.thumb)}"` : ""} controls autoplay playsinline></video>`;
     return `<div class="modal__empty"><span class="rec"></span><p class="mono">${esc(t(vertical === "reel" ? "reel.missing" : "work.placeholder"))}</p></div>`;
   }
+  // Analytics events (GoatCounter). Silently does nothing if the script is blocked or offline.
+  const track = name => { try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: name, title: name, event: true }); } catch {} };
+
   function openModal(w, isReel) {
+    track(isReel ? "Showreel opened" : `Project opened: ${(w.title && w.title.en) || "?"}`);
     const vertical = w.type === "short";
     modal.classList.toggle("is-vertical", vertical);
     $("#modalPlayer").innerHTML = embed(w, isReel ? "reel" : "");
@@ -169,6 +173,7 @@
   $("#copyMail").addEventListener("click", async e => {
     const btn = e.currentTarget;
     try { await navigator.clipboard.writeText(S.email); } catch { return; }
+    track("Email copied");
     btn.textContent = t("contact.copied");
     setTimeout(() => btn.textContent = t("contact.copy"), 1800);
   });
@@ -191,6 +196,8 @@
   if (document.fonts) document.fonts.ready.then(setNavH);
   setNavH();
   $$(".lang button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+  $$("#cvLink, #navCv").forEach(a => a.addEventListener("click", () => track("CV page opened from home")));
+  $("#mailLink").addEventListener("click", () => track("Email link clicked"));
 
   /* ---------- timecode (24 fps) ---------- */
   const tcEl = $("#timecode");

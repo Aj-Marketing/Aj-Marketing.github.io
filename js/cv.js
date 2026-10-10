@@ -72,7 +72,9 @@
     store.set("lang", lang);
     render();
   }));
-  $("#cvPrint").addEventListener("click", () => print());
+  const track = name => { try { window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: name, title: name, event: true }); } catch {} };
+  $("#cvDownload").addEventListener("click", () => track(`CV downloaded (${lang.toUpperCase()})`));
+  $("#cvPrint").addEventListener("click", () => { track("CV printed"); print(); });
 
   render();
 })();

@@ -88,6 +88,7 @@ window.I18N = {
     "contact.copy": "Copy email",
     "contact.copied": "Copied ✓",
 
+    "footer.privacy": "Privacy-friendly analytics. No cookies.",
     "footer.top": "Back to top ↑",
     "modal.close": "Close",
     "cv.title": "My CV",
@@ -189,6 +190,7 @@ window.I18N = {
     "contact.copy": "Copiar email",
     "contact.copied": "Copiado ✓",
 
+    "footer.privacy": "Analítica respetuosa con la privacidad. Sin cookies.",
     "footer.top": "Volver arriba ↑",
     "modal.close": "Cerrar",
     "cv.title": "Mi CV",
