@@ -72,9 +72,9 @@ window.SITE = {
       org: { en: "Self-employed", es: "Autónomo" },
       points: {
         en: [
-          "Edit short films, indie features, business ads, marketing campaigns and short and long-form social videos.",
-          "Work with production teams, directors and producers to deliver a finished cut they're happy with.",
-          "Track digital marketing with Google Analytics (GA4) and manage contacts in HubSpot CRM."
+          "Editing short films, indie features, business ads, marketing campaigns and short and long-form social videos.",
+          "Working with production teams, directors and producers to deliver a finished cut they're happy with.",
+          "Tracking digital marketing with Google Analytics (GA4) and managing contacts in HubSpot CRM."
         ],
         es: [
           "Edición de cortometrajes, películas indie, anuncios para negocios, campañas de marketing y vídeos de redes de formato corto y largo.",
@@ -90,9 +90,9 @@ window.SITE = {
       tag: { en: "Personal project", es: "Proyecto personal" },
       points: {
         en: [
-          "Plan, film, edit and publish my own short and long-form content and livestreams.",
+          "Planning, filming, editing and publishing my own short and long-form content and livestreams.",
           "More than 1 million total views across platforms.",
-          "Test hooks, formats and posting times, and learn from what the analytics show."
+          "Testing hooks, formats and posting times, and learning from what the analytics show."
         ],
         es: [
           "Planificación, grabación, edición y publicación de contenido propio y directos.",
@@ -107,8 +107,8 @@ window.SITE = {
       org: { en: "Freelance · Film & video productions", es: "Freelance · Producciones audiovisuales" },
       points: {
         en: [
-          "Recorded on-set dialogue, voice-over, ambience and sound effects.",
-          "Created, tweaked and edited SFX to build immersive soundscapes."
+          "Recording on-set dialogue, voice-over, ambience and sound effects.",
+          "Creating, tweaking and editing SFX to build immersive soundscapes."
         ],
         es: [
           "Grabación de diálogo en escena, voice over, sonidos de ambiente y efectos de sonido.",
